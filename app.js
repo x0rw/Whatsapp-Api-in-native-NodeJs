@@ -8,7 +8,7 @@ const RECIPIENT_WAID="PHONE NUMBER FORMAT 212605175022";
 const VERSION="v20.0";
 const PHONE_NUMBER_ID="SET";
 const ACCESS_TOKEN="EAAFSPZCpHuXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXWA7UvHjKedwDdYc5IZD";
-const body = "this is a test message";
+const MESSAGE = "this is a test message";
 const server = http.createServer((req, res) => {
   // Routing
 
@@ -20,7 +20,7 @@ const data = JSON.stringify({
     "to": RECIPIENT_WAID,
     "type": "text",
     "text": {
-        "body": body
+        "body": MESSAGE
     }
   });
 const options = {
